@@ -1,5 +1,5 @@
 import * as dotenv from "dotenv";
-import { logger } from "../../../utils/utils";
+import { logger } from "../../app/utils/utils";
 import postgres from "postgres";
 import { drizzle } from "drizzle-orm/postgres-js";
 import { migrate } from "drizzle-orm/postgres-js/migrator";
@@ -20,7 +20,7 @@ const migrateDB = async () => {
     await migrate(db, { migrationsFolder: "migrations" });
     logger.info("🟢 Successfully migrated client.");
   } catch (err) {
-    logger.error("🔴 An error ocured while migrating client: ", err);
+    logger.error("🔴 An error occurred while migrating client: ", err);
   }
 };
 migrateDB();

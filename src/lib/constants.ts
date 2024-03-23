@@ -6,6 +6,7 @@ import client5 from "../../public/assets/img/client5.png";
 import client6 from "../../public/assets/img/client6.png";
 import client8 from "../../public/assets/img/client8.png";
 import client9 from "../../public/assets/img/client9.png";
+import { ListItemsType } from "./types";
 
 export const CLIENTS = [
   { alt: "client1", logo: client1 },
@@ -146,3 +147,89 @@ export const PRICING_CARDS = [
 export const PRICING_PLANS = { proPlan: "Pro Plan", freePlan: "Free Plan" };
 
 export const MAX_FOLDERS_FREE_PLAN = 3;
+
+export const PRICING_LIST_ITEMS: ListItemsType = [
+  {
+    href: "#",
+    title: "Pro plan",
+    description: "Unlock full power with collaboration.",
+  },
+  {
+    href: "#",
+    title: "Free plan",
+    description: "Great for teams just starting out.",
+  },
+];
+export const RESOURCES_LIST_ITEMS: ListItemsType = [
+  {
+    description: "Re-usable components built using Radix UI and Tailwind CSS.",
+    href: "#",
+    title: "Introduction",
+  },
+  {
+    description: "How to install dependencies and structure your app.",
+    href: "#",
+    title: "Installation",
+  },
+  {
+    description: "Styles for headings, paragraphs, lists...etc",
+    href: "#",
+    title: "Typography",
+  },
+];
+
+export const COMPONENTS_LISTS_ITEMS: ListItemsType = [
+  {
+    title: "Alert Dialog",
+    href: "#",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+  },
+  {
+    title: "Hover Card",
+    href: "#",
+    description:
+      "For sighted users to preview content available behind a link.",
+  },
+  {
+    title: "Progress",
+    href: "#",
+    description:
+      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+  },
+  {
+    title: "Scroll-area",
+    href: "#",
+    description: "Visually or semantically separates content.",
+  },
+  {
+    title: "Tabs",
+    href: "#",
+    description:
+      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+  },
+  {
+    title: "Tooltip",
+    href: "#",
+    description:
+      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+  },
+];
+export const routes = [
+  {
+    title: "Features", // Components
+    href: "#features",
+  },
+  {
+    title: "Resources", //Geting Started
+    href: "/",
+  },
+  {
+    title: "Pricing",
+    href: "#pricing",
+  },
+  {
+    title: "Testimonials",
+    href: "#testimonials",
+  },
+];

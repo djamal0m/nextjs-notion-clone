@@ -1,9 +1,10 @@
 import type { Config } from "drizzle-kit";
 import * as dotenv from "dotenv";
+import { logger } from "./utils/utils";
 dotenv.config({ path: ".env" });
 
 if (!process.env.DATABASE_URL) {
-  console.log("🔴 Cannot find database url");
+  logger.info("🔴 Cannot find database url");
 }
 
 export default {
